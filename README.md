@@ -58,17 +58,6 @@ python gif_frame_player.py
 - **Responsive Display**: Frames are automatically resized to fit the window while maintaining aspect ratio
 - **File Info**: Displays the loaded file name and frame count
 
-## File Structure
-
-```
-frame_player/
-├── gif_frame_player.py      # Main application file
-├── create_sample_gif.py     # Sample GIF generator
-├── sample.gif              # Sample animated GIF for testing
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
-```
-
 ## Example Usage
 
 1. Run the application
