@@ -1,2 +1,5 @@
+# GIF Frame Player Dependencies
+# Image processing and GIF handling
 Pillow>=9.0.0
+# Drag and drop functionality
 tkinterdnd2>=0.3.0

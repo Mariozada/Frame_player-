@@ -6,6 +6,7 @@ A simple Python application for playing GIF files frame by frame with forward an
 
 - Load and display GIF files
 - **Drag & Drop Support**: Simply drag GIF files into the application window
+- **Zoom Controls**: Zoom in/out with buttons, keyboard shortcuts, or mouse wheel
 - Step forward and backward through frames
 - Progress bar for quick navigation to any frame
 - Keyboard shortcuts (Left/Right arrows)
@@ -43,19 +44,32 @@ python gif_frame_player.py
 - **Open GIF**: Click the "Open GIF" button to load a GIF file
 - **Previous Frame**: Click "◀ Previous" button or press Left arrow key
 - **Next Frame**: Click "Next ▶" button or press Right arrow key
+- **Zoom Controls**: 
+  - Click "🔍−" / "🔍+" buttons to zoom out/in
+  - Use mouse wheel to zoom (scroll up = zoom in, scroll down = zoom out)
+  - Click "Reset" button to return to 100% zoom
 - **Progress Bar**: Drag the slider to jump to any frame
 - **Keyboard Shortcuts**:
   - `Ctrl+O`: Open file dialog
   - `←` (Left Arrow): Previous frame
   - `→` (Right Arrow): Next frame
+  - `+` or `=`: Zoom in
+  - `-`: Zoom out
+  - `0`: Reset zoom to 100%
+  - `Ctrl + +/-/0`: Alternative zoom shortcuts
 
 ### Features
 
 - **Frame Navigation**: Step through GIF frames one by one
 - **Drag & Drop**: Instantly load GIF files by dragging them into the window
+- **Zoom Functionality**: 
+  - Zoom in/out from 10% to 500% (0.1x to 5.0x)
+  - Multiple zoom methods: buttons, keyboard, mouse wheel
+  - Smart zoom that preserves aspect ratio
+  - Reset to original size
 - **Loop Playback**: Automatically loops to the beginning when reaching the end
 - **Frame Counter**: Shows current frame number and total frames
-- **Responsive Display**: Frames are automatically resized to fit the window while maintaining aspect ratio
+- **Responsive Display**: Frames are automatically sized appropriately when loaded
 - **File Info**: Displays the loaded file name and frame count
 
 ## Example Usage
@@ -63,14 +77,28 @@ python gif_frame_player.py
 1. Run the application
 2. **Drag & drop** a GIF file into the window OR click "Open GIF" to browse
 3. Use the Previous/Next buttons or arrow keys to navigate through frames
-4. Use the progress bar to jump to specific frames
-5. Try the included `sample.gif` for testing
+4. **Zoom in/out** using mouse wheel, +/- keys, or zoom buttons for detailed viewing
+5. Use the progress bar to jump to specific frames
+6. Click "Reset" to return to 100% zoom
+7. Try the included `sample.gif` for testing
 
 ## Supported Formats
 
 - GIF files (.gif)
 - Both animated and static GIF images
 - Palette and RGB color modes
+
+## File Structure
+
+```
+frame_player/
+├── gif_frame_player.py      # Main application file
+├── create_sample_gif.py     # Sample GIF generator (optional)
+├── sample.gif              # Sample animated GIF for testing (generated)
+├── requirements.txt        # Python dependencies
+├── .gitignore             # Git ignore file
+└── README.md              # This documentation file
+```
 
 ## Technical Details
 
